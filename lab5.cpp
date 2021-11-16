@@ -95,7 +95,7 @@ void multipier(int n) {
 void Pascal(std::vector<int>& w, int wiersze) {
     w.push_back(1);
     wyp_vector(w);
-    for (int i = 0; i < wiersze; i++) {
+    for (int i = 0; i < wiersze-1; i++) {
         for (int i = w.size()-1; i > 0; i--) {
             w[i] = w[i] + w[i - 1];
         }
